@@ -83,7 +83,7 @@ function displayNote(title, body) {
   noteDisplay.appendChild(clearFix);
 
   note.appendChild(noteDisplay);
-
+  
   /* set up listener for the delete functionality */
 
   deleteBtn.addEventListener('click',(e) => {
@@ -105,6 +105,13 @@ function displayNote(title, body) {
   updateBtn.textContent = 'Update note';
   cancelBtn.setAttribute('class','cancel');
   cancelBtn.textContent = 'Cancel update';
+
+  /*add style to buttons*/
+  deleteBtn.style.background='black';
+  deleteBtn.style.color='white';
+  deleteBtn.style.padding='5px';
+  deleteBtn.style.cursor='pointer';
+
 
   noteEdit.appendChild(noteTitleEdit);
   noteTitleEdit.value = title;
