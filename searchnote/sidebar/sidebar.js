@@ -112,6 +112,15 @@ function displayNote(title, body) {
   deleteBtn.style.padding='5px';
   deleteBtn.style.cursor='pointer';
 
+  updateBtn.style.background='black';
+  updateBtn.style.color='white';
+  updateBtn.style.padding='5px';
+  updateBtn.style.cursor='pointer';
+
+  cancelBtn.style.background='black';
+  cancelBtn.style.color='white';
+  cancelBtn.style.padding='5px';
+  cancelBtn.style.cursor='pointer';
 
   noteEdit.appendChild(noteTitleEdit);
   noteTitleEdit.value = title;
